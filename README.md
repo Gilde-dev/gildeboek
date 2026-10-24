@@ -21,11 +21,12 @@ templates/             files to copy into repos (the sync workflow)
    {
      "name": "my-repo",
      "stacks": ["nestjs"],
-     "testCommand": "pnpm test",
+     "testCommands": ["pnpm test"],
      "skills": { "include": [], "exclude": [] }
    }
    ```
    `stacks`: one or more of `nestjs`, `spring-boot`, `nextjs`, `node`, `other`.
+   `testCommands`: commands an agent runs, in order, before opening a PR; all must pass.
 2. Copy `templates/sync-skills.yaml` to `.github/workflows/sync-skills.yaml` in the repo (no edits needed).
 3. Enable *Settings → Actions → General → Allow GitHub Actions to create and approve pull requests*.
 4. Run the workflow once (Actions → Sync Gilde skills → Run workflow) and merge the PR.

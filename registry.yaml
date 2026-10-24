@@ -3,6 +3,9 @@
 #   scope: stack  → repos whose stack (Repo.stack in Gilde) is listed in `stacks`
 # Stacks: spring-boot, nestjs, nextjs, node, other
 skills:
+  - name: write-agents-md
+    scope: global
+
   - name: typeorm-snake-case-columns
     scope: stack
     stacks: [nestjs, node]

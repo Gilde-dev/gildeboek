@@ -1,0 +1,8 @@
+# Which skills go into which repos.
+#   scope: global → every repo
+#   scope: stack  → repos whose stack (Repo.stack in Gilde) is listed in `stacks`
+# Stacks: spring-boot, nestjs, nextjs, node, other
+skills:
+  - name: typeorm-snake-case-columns
+    scope: stack
+    stacks: [nestjs, node]

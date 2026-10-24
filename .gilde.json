@@ -1,0 +1,9 @@
+{
+  "name": "gildeboek",
+  "stacks": ["other"],
+  "testCommands": ["./scripts/validate.sh"],
+  "skills": {
+    "include": [],
+    "exclude": []
+  }
+}

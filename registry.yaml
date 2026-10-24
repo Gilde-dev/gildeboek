@@ -1,6 +1,7 @@
 # Which skills go into which repos.
 #   scope: global → every repo
-#   scope: stack  → repos whose stack (Repo.stack in Gilde) is listed in `stacks`
+#   scope: stack  → repos with one of `stacks` in their .gilde.json `stacks`
+# Repos can add skills with `skills.include` and drop them with `skills.exclude` in .gilde.json.
 # Stacks: spring-boot, nestjs, nextjs, node, other
 skills:
   - name: write-agents-md

@@ -10,3 +10,6 @@ skills:
   - name: typeorm-snake-case-columns
     scope: stack
     stacks: [nestjs, node]
+
+  - name: write-adr
+    scope: global

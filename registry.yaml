@@ -21,5 +21,8 @@ skills:
   - name: verify-prerequisites
     scope: global
 
+  - name: nextjs-component-tests
+    scope: stack
+    stacks: [nextjs]
   - name: verify-library-behaviour
     scope: global

@@ -11,6 +11,10 @@ skills:
     scope: stack
     stacks: [nestjs, node]
 
+  - name: typeorm-queries-and-transactions
+    scope: stack
+    stacks: [nestjs, node]
+
   - name: write-adr
     scope: global
 

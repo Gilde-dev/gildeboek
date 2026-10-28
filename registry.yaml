@@ -13,3 +13,6 @@ skills:
 
   - name: write-adr
     scope: global
+
+  - name: verify-prerequisites
+    scope: global

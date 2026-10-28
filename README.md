@@ -31,6 +31,16 @@ templates/             files to copy into repos (the sync workflow)
 3. Enable *Settings → Actions → General → Allow GitHub Actions to create and approve pull requests*.
 4. Run the workflow once (Actions → Sync Gilde skills → Run workflow) and merge the PR.
 
+## Validating
+
+```
+./scripts/validate.sh   # prints exactly OK, or one ERROR line per problem and a non-zero exit
+./scripts/test.sh       # fixture tests for the validator (valid and invalid registry/skill cases)
+```
+
+Prerequisites: bash, python3 and PyYAML (`pip install pyyaml`). No `yq` is needed for validation.
+`scripts/sync.sh` (run by consuming repos' sync workflow) still needs [mikefarah yq](https://github.com/mikefarah/yq) v4.
+
 ## Adding or changing a skill
 
 1. Add or edit `skills/<name>/SKILL.md` (frontmatter `name` must match the folder).

@@ -16,3 +16,6 @@ skills:
 
   - name: verify-prerequisites
     scope: global
+
+  - name: verify-library-behaviour
+    scope: global
